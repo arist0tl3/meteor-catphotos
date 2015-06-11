@@ -32,5 +32,15 @@ Most of the work is done here. The images helper returns all of the items within
  
 <h3>client/main.html</h3>
 This file just provides the basic title, and also demonstrates that styles can be passed in the header, though this is obviously
- not usually best practice. Within the body, the {{> gallery}} tag pulls in our gallery template, and before the body closes, 
- we have a wookmark script that runs on document.ready, giving us the wookmark positioning before having to submit a new photo.
+ not usually best practice. Within the body, the {{> gallery}} tag pulls in our gallery template.
+ 
+<h3>server/startup.js</h3>
+The first time the app loads on the server, this file checks for records in the TotalCount collection, and if it finds none, 
+ it inserts one blank record. This is the record that is used to keep count of the total images processed.
+ 
+<h2>Limitations</h2>
+This is just a very basic demo. It doesn't factor in things like form validation, allow/deny, or other security measures. 
+Non-image uploads are handled poorly, and any user can really wreak havoc via the console.
+
+Feel free to fork and have fun -- this is really just a demo I made for fun and decided to upload in the hopes that it may 
+help other Meteor beginners!
