@@ -22,7 +22,6 @@ Template.gallery.events({
       Images.remove(imageToRemove);
     }
     Images.insert(imageToInsert);
-    Session.set("update", Session.get("update") + 1);
     $('#myContent').wookmark();
     $('#imagetext').val("");
     $('#imagecaption').val("");
