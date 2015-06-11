@@ -1,0 +1,17 @@
+<template name="gallery">
+  <div style="width:100%">
+    <form style="padding:10px;">
+      <input id="imagetext" style="width:60%;" type="text" placeholder="Paste a link to an image here" />
+      <p style="display:inline; padding: 0 5px;">Total Images Processed: {{imagecount}}</p><br />
+      <input id="imagecaption" style="width:60%;" type="text" placeholder="Add a caption!" />
+      <input class="submitclass" type="submit" />
+
+    </form>
+
+  </div>
+  <ul id="myContent" class="tiles-wrap animated" style="position:relative; list-style-type:none;">
+    {{#each images}}
+      <li><img src="{{source}}" /><p>{{caption}}</p></li>
+    {{/each}}
+  </ul>
+</template>
