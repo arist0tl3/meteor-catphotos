@@ -20,7 +20,7 @@ These are the files from the wookmark plugin. Basically just provide functionali
 Most of the page is here. There is a basic form up top, with inputs for a url and caption. Another line lists the total
  number of images processed.
  
-Below, within the #myContent ul, Meteor iterates over {{#each images}}, and returns a <li> for each image that it finds in
+Below, within the #myContent ul, Meteor iterates over {{#each images}}, and returns a 'li' for each image that it finds in
  the Images meteor collection. {{source}} returns the source field of the current Image item, and {{caption}} returns the 
  caption field of the current Image item.
 
