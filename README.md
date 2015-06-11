@@ -1,6 +1,8 @@
 # meteor-catphotos
 Quick Mashup of Wookmark-jQuery and Meteor
 
+Demo: http://catphotos.meteor.com
+
 This is a super basic mashup of the Wookmark-jQuery plugin and Meteor.
 
 <h2>Quick Walkthrough</h2>
